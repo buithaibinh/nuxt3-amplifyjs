@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   vite: {
     define: {
       // "process.env.DEBUG": false,
+      'window.global': {}
     },
     resolve: {
       alias: [
@@ -13,10 +14,4 @@ export default defineNuxtConfig({
       ]
     }
   },
-
-  app: {
-    head: {
-      script: [{ src: 'js/polyfills.js' }]
-    }
-  }
 });

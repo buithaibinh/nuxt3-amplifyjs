@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-useHead({
-});
+const { $auth } = useNuxtApp();
+console.log('app.vue', $auth);
 </script>
